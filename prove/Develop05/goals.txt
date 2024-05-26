@@ -1,0 +1,2 @@
+0
+SimpleGoal|drive |drive daily |30|False
