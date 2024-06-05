@@ -15,12 +15,12 @@ public class Lecture : Event
 
     public override void GetFullDetails()
     {
-        Console.WriteLine("FULL DETAI>S:");
-        Console.WriteLine($"Title: {_title}");  
-        Console.WriteLine($"Description: {_description}");  
-        Console.WriteLine($"Date: {_date}");  
-        Console.WriteLine($"Time: {_time}");  
-        Console.WriteLine($"Address: {_address.GetAddress()}");
+        Console.WriteLine("FULL DETAILS:");
+        Console.WriteLine($"Title: {GetTitle()}");  
+        Console.WriteLine($"Description: {GetDescription()}");  
+        Console.WriteLine($"Date: {GetDate()}");  
+        Console.WriteLine($"Time: {GetTime()}");  
+        Console.WriteLine($"Address: {GetAddress()}");
         Console.WriteLine($"Speaker:{_speaker} Capacity: {_capacity}");
 
     }
@@ -28,8 +28,8 @@ public class Lecture : Event
       public override void GetShortDescription()
     {
         Console.WriteLine($"Event Type: {_eventType}");
-        Console.WriteLine($"Title: {_title}");
-        Console.WriteLine($"Date: {_date}");
+        Console.WriteLine($"Title: {GetTitle()}");
+        Console.WriteLine($"Date: {GetDate()}");
     }
    
 }

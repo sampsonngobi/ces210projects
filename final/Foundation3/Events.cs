@@ -2,11 +2,11 @@
 
     public class Event
     {
-        protected string _title; 
-        protected string _description;
-        protected string _date;
-        protected string _time;
-        protected Address _address;
+        private string _title; 
+        private string _description;
+        private string _date;
+        private string _time;
+        private Address _address;
      
 
 
@@ -18,6 +18,31 @@
             _time = time;
             _address = address;
            
+        }
+
+        public string GetTitle()
+        {
+            return _title;
+        }
+
+         public string GetDescription()
+        {
+            return _description;
+        }
+
+         public string GetDate()
+        {
+            return _date;
+        }
+
+         public string GetTime()
+        {
+            return _time;
+        }
+
+        public Address GetAddress()
+        {
+            return _address;
         }
 
         public virtual void GetStandardDetails()
